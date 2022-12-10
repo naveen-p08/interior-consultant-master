@@ -70,3 +70,33 @@ body {
     padding-inline: clamp(1.5rem, 4.5vw, 7rem);
     margin-inline: auto;
 }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.mobile-toggle {
+    display: none;
+}
+
+
+/*          Nav bar media query         */
+@media (max-width: 35em) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    .mobile-toggle i[data-expanded="false"] {
+        display: block;
+    }
+
+    .mobile-toggle i[data-expanded='true'] {
+        display: none;
+    }
+}

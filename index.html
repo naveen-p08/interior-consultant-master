@@ -22,9 +22,31 @@
 
   <!--      Custom Scripts         -->
   <script src="main.js" defer></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="container">
+  <header>
+    <div class="logo">
+      <h1><a href="index.html">This Interior</a></h1>
+    </div>
+
+    <button class="mobile-toggle" aria-controls="primary-navigation">
+      <span class="visually-hidden">Menu</span>
+      <i class="fas fa-bars" data-expanded="false"></i>
+      <i class="fas fa-xmark" data-expanded="true"></i>
+    </button>
+
+    <nav class="primary-navigation" id="primary-navigation" aria-expanded="false">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   
 </body>
 
