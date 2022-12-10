@@ -87,7 +87,7 @@ body {
     outline: none;
     background: inherit;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
@@ -126,14 +126,22 @@ header a {
     font-weight: var(--fw-500);
 }
 
+.nav-list__items a {
+    border-bottom: 2px solid transparent;
+}
+
 .nav-list__items.active a {
     font-weight: var(--fw-700);
-    border-bottom: 2px solid hsl(var(--clr-white));
+    border-color :hsl(var(--clr-white));
 }
 
 
 /*          Nav bar media query         */
 @media (max-width: 45em) {
+    header {
+        margin-block: 2rem 3rem;
+    }
+
     .mobile-toggle {
         display: block;
         position: relative;
@@ -167,5 +175,11 @@ header a {
         align-items: center;
         gap: 3.5rem;
         min-height: 100vh;
+        opacity: 0;
+        transition: opacity 200ms ease-in 300ms;
+    }
+
+    .primary-navigation[aria-expanded="true"] .nav-list {
+        opacity: 1;
     }
 }
