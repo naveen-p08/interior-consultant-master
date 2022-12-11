@@ -298,6 +298,14 @@ main > *,
 .attribution {
     padding-bottom: 2rem;
     text-align: center;
+    font-size: var(--fs-400);
+    color: hsl(var(--clr-attribution));
+}
+
+.attribution a {
+    color: hsl(var(--clr-white));
+    text-decoration: underline;
+    font-weight: var(--fw-700);
 }
 
 
