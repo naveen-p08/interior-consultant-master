@@ -140,7 +140,7 @@ header a {
 
 
 /*          Nav bar media query         */
-@media (max-width: 45em) {
+@media (max-width: 44.99em) {
     header {
         margin-block: 2rem 3rem;
     }
@@ -237,7 +237,7 @@ main > *,
     width: 100%;
 }
 
-
+/* ******************************************* */
 .hero-image__container {
     margin-bottom: 15rem;
 }
@@ -292,4 +292,35 @@ main > *,
 .attribution {
     padding-bottom: 2rem;
     text-align: center;
+}
+
+
+/*      Desktop Layout          */
+
+@media (min-width: 45em) {
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        margin-top: 7rem;
+    }
+
+    .main-content > * {
+        margin-bottom: 4rem;
+    }
+
+    .main-content h1 {
+        font-size: var(--fs-900);
+        font-weight: var(--fw-500);
+    }
+
+    .main-content p {
+        font-size: var(--fs-600);
+        line-height: 1.2;
+    }
+
+    .read-more {
+        font-size: var(--fs-500);
+    }
 }
