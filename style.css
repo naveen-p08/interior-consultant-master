@@ -97,6 +97,9 @@ body {
     background: hsl(var(--bg-black));
     font-family: var(--ff-montserrat);
     color: hsl(var(--clr-white));
+
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -232,4 +235,61 @@ main > *,
 
 .read-more:where(:hover, :focus)::after {
     width: 100%;
+}
+
+
+.hero-image__container {
+    margin-bottom: 15rem;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image figcaption {
+    position: absolute;
+    bottom: -10rem;
+    right: 2rem;
+    max-width: 80%;
+    background: hsl(var(--bg-black));
+    padding: 2rem 7.5rem 2rem 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    overflow: hidden;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 6.2rem;
+}
+
+.author .author-info h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-500);
+}
+
+.author .author-info span {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-500);
+    color: hsl(var(--clr-gray));
+}
+
+.author + p {
+    font-size: var(--fs-500);
+    font-family: var(--ff-lora);
+    font-weight: var(--fw-700);
+}
+
+.attribution {
+    padding-bottom: 2rem;
+    text-align: center;
 }
