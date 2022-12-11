@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://root9259.github.io/interior-consultant-master/index.html">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/root9259/interior-consultant-master">
       Solution
     </a>
     <span> | </span>
@@ -38,7 +38,7 @@
 
 ![screenshot](interior%20consultant%20master.png)
 
-You can see the live website [here](). This project was useful to practice the data attribute method to run the mobile nav toggle instead of using classes.
+You can see the live website [here](https://root9259.github.io/interior-consultant-master/index.html). This project was useful to practice the data attribute method to run the mobile nav toggle instead of using classes.
 
 ## Features
 
