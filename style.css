@@ -273,8 +273,9 @@ main > *,
 }
 
 .author .author-info h2 {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     font-weight: var(--fw-500);
+    margin-bottom: 0.5rem;
 }
 
 .author .author-info span {
@@ -322,5 +323,31 @@ main > *,
 
     .read-more {
         font-size: var(--fs-500);
+    }
+
+    /*******************************************/
+
+    .hero-image figcaption {
+        bottom: -12rem;
+        right: 4rem;
+        padding: 2rem 15rem 4rem 2rem;
+    }
+
+    .avatar img {
+        width: 8rem;
+    }
+
+    .author .author-info h2 {
+        font-size: var(--fs-400);
+        margin-bottom: 1rem;
+    }
+
+    .author .author-info span {
+        font-size: var(--fs-300);
+    }
+
+    .author + p {
+        margin-top: 2rem;
+        font-size: var(--fs-600);
     }
 }
